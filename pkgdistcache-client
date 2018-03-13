@@ -1,2 +1,2 @@
- #!/bin/bash
- python3 -m Pkgdistcache-client "$@"
+#!/bin/bash
+env python -m Pkgdistcache-client "$@"

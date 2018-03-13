@@ -1,2 +1,2 @@
- #!/bin/bash
- python3 -m Pkgdistcache-daemon "$@"
+#!/bin/bash
+env python -m Pkgdistcache-daemon "$@"

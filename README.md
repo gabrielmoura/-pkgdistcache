@@ -1,17 +1,28 @@
 # PkgDistCache
 
-### Um cache de rede local distribuído para pacotes pacman
+### Um cache de rede local distribuído para pacotes pacman com multi conexões usando axel
 Downlaod:
 [Pacote](https://transfer.sh/MscsZ/pkgdistcache-0.4.5-1-any.pkg.tar.xz)
 [Assinatura](https://transfer.sh/fLAqg/pkgdistcache-0.4.5-1-any.pkg.tar.xz.sig)
 
 ## Instalação
 
-    > cd /tmp && curl -O https://transfer.sh/MscsZ/pkgdistcache-0.4.5-1-any.pkg.tar.xz && sudo pacman -U pkgdistcache-0.4.5-1-any.pkg.tar.xz
+> 1. git clone https://github.com/gabrielmoura/pkgdistcache
+> 2. cd pkgdistcache
+> 3. makepkg
+> 4. pacman -U pkgdistcache-0.4.5-1-any.pkg.tar.xz
 
-ou 
+## Configuração
 
-> git clone https://github.com/gabrielmoura/pkgdistcache
-> cd pkgdistcache
-> makepkg
-> pacman -U pkgdistcache-0.4.5-1-any.pkg.tar.xz
+Inicie o serviço servidor
+> sudo systemctl enable --now pkgdistcached
+
+Habilite o cliente
+
+> sudo systemctl enable avahi-daemon
+
+Edite /etc/pacman.conf e defina:
+     
+     XferCommand = /usr/bin/pkgdistcache-client %u %o
+
+o deixando como unica opção XferCommand.

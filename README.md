@@ -2,15 +2,15 @@
 
 ### Um cache de rede local distribuído para pacotes pacman com multi conexões usando axel
 Downlaod:
-[Pacote](https://transfer.sh/MscsZ/pkgdistcache-0.4.5-1-any.pkg.tar.xz)
-[Assinatura](https://transfer.sh/fLAqg/pkgdistcache-0.4.5-1-any.pkg.tar.xz.sig)
+[Pacote](https://transfer.sh/AoIAp/pkgdistcache-0.5.0-4-any.pkg.tar.xz)
+[Assinatura](https://transfer.sh/P3lnC/pkgdistcache-0.5.0-4-any.pkg.tar.xz.sig)
 
 ## Instalação
 
 > 1. git clone https://github.com/gabrielmoura/pkgdistcache
 > 2. cd pkgdistcache
 > 3. makepkg
-> 4. pacman -U pkgdistcache-0.5.1-3-any.pkg.tar.xz
+> 4. pacman -U pkgdistcache-0.5.1-4-any.pkg.tar.xz
 
 ## Configuração
 

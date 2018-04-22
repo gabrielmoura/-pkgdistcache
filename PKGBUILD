@@ -4,7 +4,7 @@
 
 pkgname=pkgdistcache
 pkgver=0.5.0
-pkgrel=3
+pkgrel=4
 pkgdesc='A distributed local-network cache for pacman packages and multipart using axel'
 arch=('any')
 url='https://github.com/gabrielmoura/pkgdistcache'
@@ -12,8 +12,8 @@ license=('GPL')
 depends=('avahi' 'python-dbus' 'dbus-glib' 'python-gobject' 'curl' 'python-requests' 'axel' 'python-xdg')
 makedepends=('python2-setuptools' 'python-distutils-extra')
 backup=(etc/pkgdistcache.conf)
-conflicts=('pkgdistcache')
-replaces=('pkgdistcache')
+#conflicts=('pkgdistcache')
+#replaces=('pkgdistcache')
 source=(
  'pkgdistcache-client' 
  'Pkgdistcache-client.py'

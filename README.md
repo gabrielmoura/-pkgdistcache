@@ -10,7 +10,7 @@ Downlaod:
 > 1. git clone https://github.com/gabrielmoura/pkgdistcache
 > 2. cd pkgdistcache
 > 3. makepkg
-> 4. pacman -U pkgdistcache-0.4.5-1-any.pkg.tar.xz
+> 4. pacman -U pkgdistcache-0.5.1-3-any.pkg.tar.xz
 
 ## Configuração
 

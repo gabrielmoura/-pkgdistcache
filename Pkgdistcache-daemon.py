@@ -99,7 +99,8 @@ def main(args):
     avahi_service = AvahiPublisher(hostname, '_pkgdistcache._tcp', '', port)
     avahi_service.publish()
 
-    os.chdir('/var/cache/pacman/pkg')
+    chdir = config['chdir']
+    os.chdir(chdir)
     handler = http.server.SimpleHTTPRequestHandler
     httpd = HTTPServerV6(('', port), handler)
 

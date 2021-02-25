@@ -5,7 +5,7 @@ import time
 
 setup(
     name='Pkgdistcache-client',
-    version=time.strftime('%Y.%m.%d.%H.%M.%S', time.gmtime(1520986859.625666)),
+    version=time.strftime('%Y.%m.%d.%H.%M.%S', time.gmtime(1614290852.217266)),
     description='A distributed local-network cache for pacman packages.',
     author='Blx32',
     author_email='g@srmoura.com.br',
@@ -16,7 +16,7 @@ setup(
 )
 setup(
     name='Pkgdistcache-daemon',
-    version=time.strftime('%Y.%m.%d.%H.%M.%S', time.gmtime(1520986859.625666)),
+    version=time.strftime('%Y.%m.%d.%H.%M.%S', time.gmtime(1614290852.217266)),
     description='A distributed local-network cache for pacman packages.',
     author='Blx32',
     author_email='g@srmoura.com.br',

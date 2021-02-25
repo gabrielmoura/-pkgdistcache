@@ -9,8 +9,7 @@ Downlaod:
 
 > 1. git clone https://github.com/gabrielmoura/pkgdistcache
 > 2. cd pkgdistcache
-> 3. makepkg
-> 4. pacman -U pkgdistcache-0.5.1-4-any.pkg.tar.xz
+> 3. makepkg --syncdeps -si
 
 ## Configuração
 
